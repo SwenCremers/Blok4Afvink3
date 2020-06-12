@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EnsemblSearch</title>
+</head>
+<body>
+<form method = 'POST'>
+<input type="text" name = "term" value = '{{ term }}'> <input type="submit">
+<hr>
+<ol>
+{%for i in genes%}
+    <li>{{i[0]}}</li>
+{%endfor%}
+</ol>
+</form>
+</body>
+</html>
